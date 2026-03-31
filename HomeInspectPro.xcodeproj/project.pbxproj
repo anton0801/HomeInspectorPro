@@ -6,8 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F6778752F7BDC7000BA1736 /* AppsFlyerLib in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6778742F7BDC7000BA1736 /* AppsFlyerLib */; };
+		8F6778782F7BDC9100BA1736 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6778772F7BDC9100BA1736 /* FirebaseDatabase */; };
+		8F67787A2F7BDC9100BA1736 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F6778792F7BDC9100BA1736 /* FirebaseMessaging */; };
+		8F6778882F7BDD3F00BA1736 /* HomeAppNotificationsExt.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 8F6778812F7BDD3F00BA1736 /* HomeAppNotificationsExt.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F6778902F7BDD4B00BA1736 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 8F67788F2F7BDD4B00BA1736 /* FirebaseMessaging */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8F6778862F7BDD3F00BA1736 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8F6775602F7190F600BA1736 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8F6778802F7BDD3F00BA1736;
+			remoteInfo = HomeAppNotificationsExt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8F67788D2F7BDD3F00BA1736 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				8F6778882F7BDD3F00BA1736 /* HomeAppNotificationsExt.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		8F6775682F7190F600BA1736 /* HomeInspectPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeInspectPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F6778812F7BDD3F00BA1736 /* HomeAppNotificationsExt.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HomeAppNotificationsExt.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -17,6 +50,13 @@
 				Info.plist,
 			);
 			target = 8F6775672F7190F600BA1736 /* HomeInspectPro */;
+		};
+		8F67788C2F7BDD3F00BA1736 /* Exceptions for "HomeAppNotificationsExt" folder in "HomeAppNotificationsExt" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 8F6778802F7BDD3F00BA1736 /* HomeAppNotificationsExt */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -29,6 +69,14 @@
 			path = HomeInspectPro;
 			sourceTree = "<group>";
 		};
+		8F6778822F7BDD3F00BA1736 /* HomeAppNotificationsExt */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				8F67788C2F7BDD3F00BA1736 /* Exceptions for "HomeAppNotificationsExt" folder in "HomeAppNotificationsExt" target */,
+			);
+			path = HomeAppNotificationsExt;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +84,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F67787A2F7BDC9100BA1736 /* FirebaseMessaging in Frameworks */,
+				8F6778782F7BDC9100BA1736 /* FirebaseDatabase in Frameworks */,
+				8F6778752F7BDC7000BA1736 /* AppsFlyerLib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F67787E2F7BDD3F00BA1736 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F6778902F7BDD4B00BA1736 /* FirebaseMessaging in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				8F67756A2F7190F600BA1736 /* HomeInspectPro */,
+				8F6778822F7BDD3F00BA1736 /* HomeAppNotificationsExt */,
+				8F67788E2F7BDD4B00BA1736 /* Frameworks */,
 				8F6775692F7190F600BA1736 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,8 +115,16 @@
 			isa = PBXGroup;
 			children = (
 				8F6775682F7190F600BA1736 /* HomeInspectPro.app */,
+				8F6778812F7BDD3F00BA1736 /* HomeAppNotificationsExt.appex */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		8F67788E2F7BDD4B00BA1736 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -68,20 +137,48 @@
 				8F6775642F7190F600BA1736 /* Sources */,
 				8F6775652F7190F600BA1736 /* Frameworks */,
 				8F6775662F7190F600BA1736 /* Resources */,
+				8F67788D2F7BDD3F00BA1736 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				8F6778872F7BDD3F00BA1736 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				8F67756A2F7190F600BA1736 /* HomeInspectPro */,
 			);
 			name = HomeInspectPro;
 			packageProductDependencies = (
+				8F6778742F7BDC7000BA1736 /* AppsFlyerLib */,
+				8F6778772F7BDC9100BA1736 /* FirebaseDatabase */,
+				8F6778792F7BDC9100BA1736 /* FirebaseMessaging */,
 			);
 			productName = HomeInspectPro;
 			productReference = 8F6775682F7190F600BA1736 /* HomeInspectPro.app */;
 			productType = "com.apple.product-type.application";
+		};
+		8F6778802F7BDD3F00BA1736 /* HomeAppNotificationsExt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F6778892F7BDD3F00BA1736 /* Build configuration list for PBXNativeTarget "HomeAppNotificationsExt" */;
+			buildPhases = (
+				8F67787D2F7BDD3F00BA1736 /* Sources */,
+				8F67787E2F7BDD3F00BA1736 /* Frameworks */,
+				8F67787F2F7BDD3F00BA1736 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8F6778822F7BDD3F00BA1736 /* HomeAppNotificationsExt */,
+			);
+			name = HomeAppNotificationsExt;
+			packageProductDependencies = (
+				8F67788F2F7BDD4B00BA1736 /* FirebaseMessaging */,
+			);
+			productName = HomeAppNotificationsExt;
+			productReference = 8F6778812F7BDD3F00BA1736 /* HomeAppNotificationsExt.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -97,6 +194,9 @@
 						CreatedOnToolsVersion = 16.4;
 						LastSwiftMigration = 1640;
 					};
+					8F6778802F7BDD3F00BA1736 = {
+						CreatedOnToolsVersion = 16.4;
+					};
 				};
 			};
 			buildConfigurationList = 8F6775632F7190F600BA1736 /* Build configuration list for PBXProject "HomeInspectPro" */;
@@ -108,18 +208,30 @@
 			);
 			mainGroup = 8F67755F2F7190F600BA1736;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8F6778732F7BDC7000BA1736 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */,
+				8F6778762F7BDC9100BA1736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8F6775692F7190F600BA1736 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8F6775672F7190F600BA1736 /* HomeInspectPro */,
+				8F6778802F7BDD3F00BA1736 /* HomeAppNotificationsExt */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8F6775662F7190F600BA1736 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F67787F2F7BDD3F00BA1736 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -136,7 +248,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		8F67787D2F7BDD3F00BA1736 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8F6778872F7BDD3F00BA1736 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8F6778802F7BDD3F00BA1736 /* HomeAppNotificationsExt */;
+			targetProxy = 8F6778862F7BDD3F00BA1736 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		8F6775722F7190F600BA1736 /* Debug */ = {
@@ -270,6 +397,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "HomeInspect Pro needs camera access to photograph building defects and issues.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "HomeInspect Pro needs to save photos to your library.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "HomeInspect Pro needs photo library access to attach photos to issues and inspections.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Home Inspect Pro may use limited device-related technical information to support inspection tools, maintain reliable performance, and improve feature accuracy. This data is used only for internal diagnostics and ongoing enhancements. It is not used to track users across other apps or websites and is not shared with third parties for advertising purposes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -284,7 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inspectprhom.HomeInspectPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -316,6 +444,7 @@
 				INFOPLIST_KEY_NSCameraUsageDescription = "HomeInspect Pro needs camera access to photograph building defects and issues.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "HomeInspect Pro needs to save photos to your library.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "HomeInspect Pro needs photo library access to attach photos to issues and inspections.";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Home Inspect Pro may use limited device-related technical information to support inspection tools, maintain reliable performance, and improve feature accuracy. This data is used only for internal diagnostics and ongoing enhancements. It is not used to track users across other apps or websites and is not shared with third parties for advertising purposes.";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -330,7 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inspectprhom.HomeInspectPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -341,6 +470,67 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				XROS_DEPLOYMENT_TARGET = 2.5;
+			};
+			name = Release;
+		};
+		8F67788A2F7BDD3F00BA1736 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeAppNotificationsExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomeAppNotificationsExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectprhom.HomeInspectPro.HomeAppNotificationsExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F67788B2F7BDD3F00BA1736 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HomeAppNotificationsExt/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = HomeAppNotificationsExt;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inspectprhom.HomeInspectPro.HomeAppNotificationsExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -365,7 +555,58 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		8F6778892F7BDD3F00BA1736 /* Build configuration list for PBXNativeTarget "HomeAppNotificationsExt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F67788A2F7BDD3F00BA1736 /* Debug */,
+				8F67788B2F7BDD3F00BA1736 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F6778732F7BDC7000BA1736 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppsFlyerSDK/AppsFlyerFramework";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.17.9;
+			};
+		};
+		8F6778762F7BDC9100BA1736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F6778742F7BDC7000BA1736 /* AppsFlyerLib */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F6778732F7BDC7000BA1736 /* XCRemoteSwiftPackageReference "AppsFlyerFramework" */;
+			productName = AppsFlyerLib;
+		};
+		8F6778772F7BDC9100BA1736 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F6778762F7BDC9100BA1736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		8F6778792F7BDC9100BA1736 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F6778762F7BDC9100BA1736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		8F67788F2F7BDD4B00BA1736 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F6778762F7BDC9100BA1736 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8F6775602F7190F600BA1736 /* Project object */;
 }

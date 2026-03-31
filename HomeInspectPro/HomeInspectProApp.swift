@@ -2,6 +2,18 @@ import SwiftUI
 
 @main
 struct HomeInspectProApp: App {
+    
+    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegateApp
+
+    var body: some Scene {
+        WindowGroup {
+            SplashView()
+        }
+    }
+}
+
+struct RootView: View {
+    
     @StateObject private var appVM       = AppViewModel()
     @StateObject private var buildingsVM = BuildingsViewModel()
     @StateObject private var inspVM      = InspectionsViewModel()
@@ -10,32 +22,9 @@ struct HomeInspectProApp: App {
     @StateObject private var materialsVM = MaterialsViewModel()
     @StateObject private var activityVM  = ActivityViewModel()
 
-    var body: some Scene {
-        WindowGroup {
-            RootView()
-                .environmentObject(appVM)
-                .environmentObject(buildingsVM)
-                .environmentObject(inspVM)
-                .environmentObject(issuesVM)
-                .environmentObject(repairsVM)
-                .environmentObject(materialsVM)
-                .environmentObject(activityVM)
-                .preferredColorScheme(appVM.preferredColorScheme)
-        }
-    }
-}
-
-// MARK: - Root Routing View
-struct RootView: View {
-    @EnvironmentObject private var appVM: AppViewModel
-    @State private var showSplash = true
-
     var body: some View {
         ZStack {
-            if showSplash {
-                SplashView()
-                    .transition(.opacity)
-            } else if !appVM.hasOnboarded {
+            if !appVM.hasOnboarded {
                 OnboardingView()
                     .transition(.asymmetric(
                         insertion: .move(edge: .trailing),
@@ -64,13 +53,8 @@ struct RootView: View {
                 .allowsHitTesting(false)
             }
         }
-        .animation(.hpSpring, value: showSplash)
         .animation(.hpSpring, value: appVM.hasOnboarded)
         .animation(.hpSpring, value: appVM.isLoggedIn)
-        .onAppear {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 2.8) {
-                withAnimation { showSplash = false }
-            }
-        }
+        .preferredColorScheme(appVM.preferredColorScheme)
     }
 }
