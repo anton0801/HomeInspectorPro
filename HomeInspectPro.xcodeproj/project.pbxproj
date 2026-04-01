@@ -392,7 +392,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomeInspectPro/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "HomeInspect Pro";
+				INFOPLIST_KEY_CFBundleDisplayName = "Home Inspect Pro";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "HomeInspect Pro needs camera access to photograph building defects and issues.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "HomeInspect Pro needs to save photos to your library.";
@@ -412,7 +412,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inspectprhom.HomeInspectPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;
@@ -439,7 +439,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = HomeInspectPro/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "HomeInspect Pro";
+				INFOPLIST_KEY_CFBundleDisplayName = "Home Inspect Pro";
 				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
 				INFOPLIST_KEY_NSCameraUsageDescription = "HomeInspect Pro needs camera access to photograph building defects and issues.";
 				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "HomeInspect Pro needs to save photos to your library.";
@@ -459,7 +459,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.3;
-				MARKETING_VERSION = 1.2.0;
+				MARKETING_VERSION = 1.2.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.inspectprhom.HomeInspectPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				REGISTER_APP_GROUPS = YES;

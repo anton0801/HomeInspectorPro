@@ -56,5 +56,12 @@ struct RootView: View {
         .animation(.hpSpring, value: appVM.hasOnboarded)
         .animation(.hpSpring, value: appVM.isLoggedIn)
         .preferredColorScheme(appVM.preferredColorScheme)
+        .environmentObject(appVM)
+        .environmentObject(buildingsVM)
+        .environmentObject(inspVM)
+        .environmentObject(issuesVM)
+        .environmentObject(repairsVM)
+        .environmentObject(materialsVM)
+        .environmentObject(activityVM)
     }
 }
